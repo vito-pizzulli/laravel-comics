@@ -11,12 +11,13 @@
             <span>Current series</span>
         </div>
         <div id="comics-list">
-            <div class="comics-element">
-                @foreach($comics as $comic)
+            
+            @foreach($comics as $comic)
+                <div class="comics-element">
                     <img src="{{ $comic['thumb'] }}" :alt="{{ $comic['series'] }}"><br>
                     <span>{{ $comic['series'] }}</span>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
         <button>Load more</button>
     </div>
