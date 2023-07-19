@@ -5,10 +5,12 @@
         </div>
         <nav id="header-navbar">
             <ul>
-                {{-- <li v-for="link in navbarLinks">
-                    <a :href="link.link">{{ link.text }}</a>
-                    <div class="light-bar"></div>
-                </li> --}}
+                @foreach($dcComicsLinks as $link)
+                    <li>
+                        <a href="{{ $link['link'] }}">{{ $link['text'] }}</a>
+                        <div class="light-bar"></div>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
