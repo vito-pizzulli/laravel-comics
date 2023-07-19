@@ -3,23 +3,28 @@
         'navbarLinks' => [
             [
                 'text' => 'Digital comics',
-                'image' => 'img/buy-comics-digital-comics.png'
+                'image' => 'img/buy-comics-digital-comics.png',
+                'link' => '#'
             ],
             [
                 'text' => 'DC Merchandise',
-                'image' => 'img/buy-comics-merchandise.png'
+                'image' => 'img/buy-comics-merchandise.png',
+                'link' => '#'
             ],
             [
                 'text' => 'Subscription',
-                'image' => 'img/buy-comics-subscriptions.png'
+                'image' => 'img/buy-comics-subscriptions.png',
+                'link' => '#'
             ],
             [
                 'text' => 'Comics Shop Locator',
-                'image' => 'img/buy-comics-shop-locator.png'
+                'image' => 'img/buy-comics-shop-locator.png',
+                'link' => '#'
             ],
             [
                 'text' => 'DC Power Visa',
-                'image' => 'img/buy-dc-power-visa.svg'
+                'image' => 'img/buy-dc-power-visa.svg',
+                'link' => '#'
             ]
         ],
         'dcComicsLinks' => [
