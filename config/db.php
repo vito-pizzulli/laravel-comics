@@ -120,7 +120,7 @@
                 'link' => '#'
             ]
         ],
-        'sitesLinks' => [
+        'siteLinks' => [
             [
                 'text' => 'DC',
                 'link' => '#'
