@@ -15,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('home', compact('comics'));
-});
+    $navbarLinks = config('db.navbarLinks');
+    $dcComicsLinks = config('db.dcComicsLinks');
+    $shopLinks = config('db.shopLinks');
+    $dcLinks = config('db.dcLinks');
+    $siteLinks = config('db.siteLinks');
+    $socials = config('db.socials');
+    return view('home', compact('comics', 'navbarLinks', 'dcComicsLinks', 'shopLinks', 'dcLinks', 'siteLinks', 'socials'));
+})->name('homepage');
