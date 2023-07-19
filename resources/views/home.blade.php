@@ -24,10 +24,12 @@
     <div id="navbar-blue">
         <div class="wrapper">
             <ul>
-                <li v-for="link in navbarLinks">
-                    <img :src="getImagePath(link.image)" :alt="link.text + ' Image'">
-                    {{-- <a :href="link.link">{{ link.text }}</a> --}}
-                </li>
+                @foreach($navbarLinks as $link)
+                    <li>
+                        <img src="{{ Vite::asset('resources/' . $link['image']) }}" alt="{{ $link['text'] . ' Image' }}">
+                        <a href="{{ $link['link'] }}">{{ $link['text'] }}</a>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>
